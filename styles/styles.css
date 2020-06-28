@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(7, 7, 43);
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-a {
+	background-color: rgb(20, 20, 78);
+	margin: 100px;
+}
+
+.week {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.box h3 {
+	color: rgb(252, 238, 238);
+}

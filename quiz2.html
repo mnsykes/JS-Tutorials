@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>A Simple Quiz</title>
+		<link href="styles/site.css" rel="stylesheet" />
+		<script>
+			var score = 0;
+			var questions = [
+				["How many moons does Earth have?", 1],
+				["How many moons does Saturn have?", 31],
+				["How many moons does Venus have?", 0],
+			];
+
+			function askQuestion(question) {
+				var answer = prompt(question[0], "");
+				if (answer == question[1]) {
+					alert("Correct!");
+					score++;
+				} else {
+					alert("Sorry. The correct answer is " + question[1]);
+				}
+			}
+
+			for (var i = 0; i < questions.length; i++) {
+				askQuestion(questions[i]);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL
+			</header>
+			<div class="content">
+				<div class="main">
+					<h1>A Simple Quiz</h1>
+					<script>
+						var message = "You got " + score;
+						message += " out of " + questions.length;
+						message += " questions correct.";
+						document.write("<p>" + message + "</p>");
+					</script>
+				</div>
+				<div class="purchase">
+					<h1>Big Book of Space Trivia</h1>
+					<br>
+					<br>
+					<p>If you enjoyed our sample quiz consider buying the Big Book of Space Trivia for 
+						 the low price of only $19.99!
+					</p>
+					<button id="myBtn">Order Now</button>
+				</div>
+				<div id="orderModal" class="modal">
+					<div class="modalBody">
+						<form
+							name="orderForm"
+							action="http://www.rebol.com/cgi-bin/test-cgi.cgi"
+							class="orderForm">
+							<span class="closeModal">&times;</span>
+							<h1>Order Form</h1>
+							<div class="contact">
+								<label for="fname">First name</label>
+								<input class="fname" type="text" name="fname" />
+								<label for="lname">Last name</label>
+								<input class="lname" type="text" name="lname" />
+								<label for="street">Street</label>
+								<input class="street" type="text" name="street" />
+								<label for="city">City</label>
+								<input class="city" type="text" name="city" />
+								<label for="state">State</label>
+								<select class="stateDrop" name="state">
+									<option value="State">Select</option>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District Of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO">Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
+								</select>
+								<label for="zip">Zip code</label>
+								<input class="zip" type="text" name="zip" />
+							</div>
+							<div class="payment">
+								<h3>Payment type:</h3>
+							<div class="check">
+								<input type="radio" name="pay" />
+								<label for="pay">Pay by Check</label>
+							</div>
+							<div class="card">
+								<input type="radio" name="pay" onclick="creditOpen();" />
+								<label for="pay">Pay by Credit Card</label>
+							</div>
+							<div id="hide" class="cardInfo">
+								<input type="text" name="credit" placeholder="Card number" />
+								<input type="text" name="cvv" class="cvv" placeholder="CVV" />
+								<div class="cardSelect">
+									<select name="month" class="monthDrop">
+										<option value="January">January</option>
+										<option value="Febuary">Febuary</option>
+										<option value="March">March</option>
+										<option value="April">April</option>
+										<option value="May">May</option>
+										<option value="June">June</option>
+										<option value="July">July</option>
+										<option value="August">August</option>
+										<option value="September">September</option>
+										<option value="October">October</option>
+										<option value="November">November</option>
+										<option value="December">December</option>
+									</select>
+									<select name="year" class="yearDrop">
+										<option value="2020">2020</option>
+										<option value="2021">2021</option>
+										<option value="2022">2022</option>
+										<option value="2023">2023</option>
+										<option value="2024">2024</option>
+										<option value="2025">2025</option>
+										<option value="2026">2026</option>
+										<option value="2027">2027</option>
+										<option value="2028">2028</option>
+									</select>
+								</div>
+							</div>
+							<div class="buttons">
+								<button type="submit">Submit</button>
+								<button type="reset">Clear Form</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<script src="scripts/main.js"></script>
+			<footer>
+				<p>
+					JavaScript &amp; jQuery: The Missing Manual, 3rd Edition, by
+					<a href="http://sawmac.com/">David McFarland</a>. Published by
+					<a href="http://oreilly.com/">O'Reilly Media, Inc</a>.
+				</p>
+			</footer>
+		</div>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>

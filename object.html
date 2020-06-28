@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function Cocktail(liquor, soda, citrus) {
+				this.liquor = liquor;
+				this.soda = soda;
+				this.citrus = citrus;
+
+				this.mix = function () {
+					return (
+						"Pour 2 oz. of " +
+						this.liquor +
+						" and 4 oz. of " +
+						this.soda +
+						" into a highball glass filled with ice and add a twist of " +
+						this.citrus +
+						" for garnish"
+					);
+				};
+			}
+			var cocktail = new Cocktail("Scotch", "club soda", "lemon");
+			document.write("<p>" + cocktail.mix() + "</p>");
+		</script>
+	</body>
+</html>
