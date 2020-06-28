@@ -19,21 +19,44 @@
 			}
 		</style>
 		<script src="scripts/jquery.min.js"></script>
-
+		<script src="_js/jquery-ui.min.js"></script>
 		<script>
-			$(document).ready(function () {}); // end ready
+			$(document).ready(function () {
+				$("#dashboard").hover(
+					function () {
+						$(this).stop().animate(
+							{
+								left: "0",
+								backGroundColor: "rgb(27,45,94)",
+							},
+							500,
+							"easeInSine"
+						); // end animate
+					},
+					function () {
+						$(this).stop().animate(
+							{
+								left: "-92px",
+								backGroundColor: "rgb(255,211,224)",
+							},
+							1500,
+							"easeOutBounce"
+						); // end animate
+					}
+				); // end hover
+			}); // end ready
 		</script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>JAVASCRIPT <span class="amp">&amp;</span> jQUERY: THE&nbsp;MISSING&nbsp;MANUAL</header>
 			<div id="dashboard">
-				<img src="_images/small/blue_h.jpg" width="70" height="70" alt="blue" />
-				<img src="_images/small/green_h.jpg" width="70" height="70" alt="green" />
-				<img src="_images/small/orange_h.jpg" width="70" height="70" alt="orange" />
-				<img src="_images/small/purple_h.jpg" width="70" height="70" alt="purple" />
-				<img src="_images/small/red_h.jpg" width="70" height="70" alt="red" />
-				<img src="_images/small/yellow_h.jpg" width="70" height="70" alt="yellow" />
+				<img src="images/blue_h.jpg" width="70" height="70" alt="blue" />
+				<img src="images/green_h.jpg" width="70" height="70" alt="green" />
+				<img src="images/orange_h.jpg" width="70" height="70" alt="orange" />
+				<img src="images/purple_h.jpg" width="70" height="70" alt="purple" />
+				<img src="images/red_h.jpg" width="70" height="70" alt="red" />
+				<img src="images/yellow_h.jpg" width="70" height="70" alt="yellow" />
 			</div>
 			<div class="content">
 				<div class="main">
