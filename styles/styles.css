@@ -29,7 +29,7 @@ p {
 	width: 90vw;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-areas: "flip1 flip1 flip2" "flip3 img flip4" "flip5 flip6 flip6";
+	grid-template-areas: "flip1 flip1 flip2" "flip3 img flip4" "flip5 flip6 flip7";
 	margin: 30px auto;
 }
 
@@ -65,6 +65,10 @@ p {
 
 .flip6 {
 	grid-area: flip6;
+}
+
+.flip7 {
+	grid-area: flip7;
 }
 
 .flip {
