@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: rgb(34, 60, 94);
+	background-color: rgba(9, 60, 126, 0.87);
 	text-align: center;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -25,12 +25,10 @@ p {
 
 #flipCards {
 	display: grid;
-	height: 90vh;
-	width: 90vw;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-areas: "flip1 flip1 flip2" "flip3 img flip4" "flip5 flip6 flip7";
-	margin: 30px auto;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "flip1 flip2 flip3" "flip4 img flip5" "flip6 flip7 flip8";
+	cursor: pointer;
 }
 
 .imgBox {
@@ -41,6 +39,18 @@ p {
 	grid-area: img;
 	height: 100%;
 	width: 100%;
+}
+
+.imgBox img {
+	height: 80%;
+}
+
+.imgBox:hover {
+	cursor: pointer;
+}
+
+.imgBox img:hover {
+	width: 200px;
 }
 
 .flip1 {
@@ -69,6 +79,10 @@ p {
 
 .flip7 {
 	grid-area: flip7;
+}
+
+.flip8 {
+	grid-area: flip8;
 }
 
 .flip {
@@ -111,14 +125,18 @@ p {
 }
 
 .flipBack {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-color: rgb(122, 163, 187);
 	transform: rotateY(180deg);
 }
 
 .flipBack a {
 	color: white;
-	line-height: 1.5em;
-	font-size: 1.7rem;
+	line-height: 1.7rem;
+	font-size: 2rem;
 }
 
 .flipBack a:hover {
@@ -127,4 +145,5 @@ p {
 
 .flipBack p {
 	color: black;
+	line-height: 2rem;
 }
