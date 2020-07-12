@@ -2,12 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
-	background-color: rgba(9, 60, 126, 0.87);
 	text-align: center;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: "Courier New", Courier, monospace;
 }
 
 a {
@@ -23,127 +23,140 @@ p {
 	color: rgb(97, 96, 96);
 }
 
-#flipCards {
+/* Index animation */
+.wrapper {
+	padding: 0;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-template-areas: "flip1 flip2 flip3" "flip4 img flip5" "flip6 flip7 flip8";
-	cursor: pointer;
-}
-
-.imgBox {
-	background-color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	grid-area: img;
-	height: 100%;
-	width: 100%;
-}
-
-.imgBox img {
-	height: 80%;
-}
-
-.imgBox:hover {
-	cursor: pointer;
-}
-
-.imgBox img:hover {
-	width: 200px;
-}
-
-.flip1 {
-	grid-area: flip1;
-}
-
-.flip2 {
-	grid-area: flip2;
-}
-
-.flip3 {
-	grid-area: flip3;
-}
-
-.flip4 {
-	grid-area: flip4;
-}
-
-.flip5 {
-	grid-area: flip5;
-}
-
-.flip6 {
-	grid-area: flip6;
-}
-
-.flip7 {
-	grid-area: flip7;
-}
-
-.flip8 {
-	grid-area: flip8;
-}
-
-.flip {
-	background-color: transparent;
-	width: 100%;
-	height: 100%;
-}
-
-.flipInner {
-	position: relative;
-	width: 100%;
-	height: 100%;
+	grid-template-columns: 1fr;
 	text-align: center;
-	transition: transform 1s;
-	transform-style: preserve-3d;
+	margin-top: 250px;
+	height: 100px;
+	width: 100vw;
 }
 
-.flip:hover .flipInner {
-	transform: rotateY(180deg);
+.wrapper h1 {
+	font-size: 4rem;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+	border-right: 0.15em solid white;
+	margin: 0 auto;
+	letter-spacing: 0.15em;
+	animation: blink-caret 0.6s step-end infinite;
 }
 
-.flipFront,
-.flipBack {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
 }
 
-.flipFront {
+.enter {
+	display: grid;
+	grid-template-columns: 1fr;
+	height: auto;
+	width: 100vw;
+	background: transparent;
+	margin-top: 80px;
+}
+
+.enter a {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 3rem;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.enter a:hover {
+	font-size: 3.8rem;
+}
+
+.homeHeader {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	background-color: rgb(45, 158, 179);
-	font-family: consolas;
-	font-size: 2rem;
-	color: black;
-	border: 1px whitesmoke solid;
+	background: whitesmoke;
+	border-bottom: 1px solid rgb(10, 10, 71);
+	grid-area: homeHeader;
 }
 
-.flipBack {
+.headerText h1 {
+	text-align: center;
+	margin-left: 400px;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: rgb(10, 10, 71);
+}
+
+.homeHeader .hamburger {
+	display: inline-block;
+	height: 100%;
+	width: 150px;
+}
+
+.hamburger i {
+	font-size: 60px;
+	margin-top: 20px;
+	color: rgb(10, 10, 71);
+	cursor: pointer;
+}
+
+.homeNav {
+	float: left;
+	width: 250px;
+	height: 100vh;
+	background: whitesmoke;
+}
+
+.homeNav li {
+	display: block;
+	list-style-type: none;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.homeNav li a {
+	display: block;
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	font-size: 1.9rem;
+	font-weight: bold;
+	color: rgb(10, 10, 71);
+	padding-bottom: 15px;
+}
+
+.homeNav li:hover {
+	background: #efdb4f;
+}
+
+#home {
+	background: #f8df20;
+}
+
+#home img {
+	width: auto;
+	height: 90vh;
+}
+
+.tabContent {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(122, 163, 187);
-	transform: rotateY(180deg);
 }
 
-.flipBack a {
-	color: white;
-	line-height: 1.7rem;
-	font-size: 2rem;
+.tabContent h2 {
+	font-size: 3rem;
+	margin-top: 30px;
 }
 
-.flipBack a:hover {
-	border-bottom: 1px solid white;
-}
-
-.flipBack p {
+.tabContent h2:hover {
 	color: black;
-	line-height: 2rem;
+	border-bottom: 2px solid #efdb4f;
 }
