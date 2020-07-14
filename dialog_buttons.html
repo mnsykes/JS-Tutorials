@@ -3,13 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Dialog example</title>
-<link href="../_css/jquery-ui.min.css" rel="stylesheet">
-<link href="../_css/site.css" rel="stylesheet">
-<script src="../_js/jquery.min.js"></script>
-<script src="../_js/jquery-ui.min.js"></script>
+<link href="styles/jquery-ui.min.css" rel="stylesheet">
+<link href="styles/site.css" rel="stylesheet">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
 <script>
-$(document).ready(function() {
-  
+$(document).ready(function (){
+	$('#confirm').dialog({
+		modal: true,
+			autoOpen: false,
+		buttons : {
+			"Confirm" : function() {
+				$('#robot').effect('explode');
+				$(this).dialog('close');
+			}
+		}
+	});
+	$('#robot').click(function() {
+		$('#confirm').dialog('open');
+	}); // end click
 }); // end ready
 </script>
 </head>
@@ -24,7 +36,9 @@ $(document).ready(function() {
 			<p>Eeek, a robot! Click on the robot to destroy it.</p>
       <p><img src="images/robot.jpg" id="robot"></p>
 			<!-- add dialog here -->
-
+			<div id="confirm" title="Confirm Destruction">
+				<p>Are you sure you want to destroy the robot?</p>
+			</div>
 		</div>
 	</div>
 	<footer>

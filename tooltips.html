@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello World</title>
-<link href="../_css/jquery-ui.min.css" rel="stylesheet">
-<link href="../_css/site.css" rel="stylesheet">
-<script src="../_js/jquery.min.js"></script>
-<script src="../_js/jquery-ui.min.js"></script>
+<link href="styles/jquery-ui.min.css" rel="stylesheet">
+<link href="styles/site.css" rel="stylesheet">
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
 <script>
 $(document).ready(function() {
-
+	$('[title').tooltip()
 }); // end ready
 </script>>
 </head>
@@ -24,11 +24,11 @@ $(document).ready(function() {
 			<p>You can add tooltips to anything on a page.</p>
 			<div class="row">
 
-			<p>A paragraph</p>
+			<p title="Yes, I am a paragraph.">A paragraph</p>
 
-			<p>An image <img src="images/map.png"></p>
+			<p>An image <img src="images/map.png" title="I am a map"></p>
 
-			<p><button>A button</button></p>
+			<p><button title="Click this button!">A button</button></p>
 			
 			</div>
 		</div>
