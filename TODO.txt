@@ -1,0 +1,54 @@
+Form validation
+Animated Nav
+Comments
+Attribute images
+
+---Home Page---
+
+Add:
+  1. Footer [Wednesday]
+  2. League information [Wednesday]
+  3. Twitter feed [Friday]
+  4. More statistic categories [Wednesday]
+  5. Add content below hero image [Wednesday]
+  6. Additional links in Top Nav [Tuesday]
+  7. 'Back to Top' links [Wednesday]
+  8. Welcome message from the 'Commissioner' [Tuesday]
+  9. League slogan on hero image [Tuesday]
+  10. Link to teams from standings [X]
+  11. Link to stadiums from upcoming games [POSSIBLY REMOVE SECTION]
+
+Style:
+  1. Smooth scrolling [Friday]
+  2. Style tables [Tuesday]
+  3. Style newsletter button and input [Friday]
+  4. Additional CSS styling [ONGOING]
+  5. Responsiveness [ONGOING]
+
+General:
+  1. CSS and HTML validation [Saturday]
+  2. Accessability [ONGOING]
+  3. Meta tags [Saturday]
+  4. Add comments and attributions for images used [ONGOING]
+
+---TEAM PAGES---
+
+Add:
+  1. Different player names [X]
+  2. Images [Thursday]
+  3. Team specific content [Thursday]
+  4. Team contact information [Thursday]
+  5. Navigation links [Thursday]
+
+Style:
+  1. Style ticket order form [Tuesday]
+  2. Make button to launch order form as a modal [Tuesday]
+  3. Team specific color palettes [Thursday]
+  4. General CSS styling [ONGOING]
+  5. Responsiveness [ONGOING]
+
+General:
+  1. CSS and HTML validation [Saturday]
+  2. Accessability [ONGOING]
+  3. Meta tags [Saturday]
+  4. Add comments and attributions for images used [ONGOING]

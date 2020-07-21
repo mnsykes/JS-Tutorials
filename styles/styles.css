@@ -118,7 +118,7 @@ a {
 	display: block;
 	list-style-type: none;
 	text-align: left;
-	padding-top: 20px;
+	padding-top: 5px;
 	padding-left: 20px;
 }
 
@@ -127,7 +127,7 @@ a {
 	text-decoration: none;
 	height: 100%;
 	width: 100%;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	color: rgb(10, 10, 71);
 	padding-bottom: 15px;
