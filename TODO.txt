@@ -11,16 +11,14 @@ Add:
   3. Twitter feed [Friday]
   4. More statistic categories [Wednesday]
   5. Add content below hero image [Wednesday]
-  6. Additional links in Top Nav [Tuesday]
+  6. Additional links in Top Nav [X]
   7. 'Back to Top' links [Wednesday]
-  8. Welcome message from the 'Commissioner' [Tuesday]
-  9. League slogan on hero image [Tuesday]
-  10. Link to teams from standings [X]
-  11. Link to stadiums from upcoming games [POSSIBLY REMOVE SECTION]
+  8. League slogan on hero image [Tuesday]
+  9. Link to teams from standings [X]
 
 Style:
   1. Smooth scrolling [Friday]
-  2. Style tables [Tuesday]
+  2. Style tables [X]
   3. Style newsletter button and input [Friday]
   4. Additional CSS styling [ONGOING]
   5. Responsiveness [ONGOING]
@@ -41,8 +39,8 @@ Add:
   5. Navigation links [Thursday]
 
 Style:
-  1. Style ticket order form [Tuesday]
-  2. Make button to launch order form as a modal [Tuesday]
+  1. Style ticket order form [Friday]
+  2. Make button to launch order form as a modal [Friday]
   3. Team specific color palettes [Thursday]
   4. General CSS styling [ONGOING]
   5. Responsiveness [ONGOING]
