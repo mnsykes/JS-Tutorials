@@ -6,14 +6,14 @@ Attribute images
 ---Home Page---
 
 Add:
-  1. Footer [Wednesday]
-  2. League information [Wednesday]
-  3. Twitter feed [Friday]
-  4. More statistic categories [Wednesday]
-  5. Add content below hero image [Wednesday]
+  1. Footer & League Info [X]
+  2. League information [Contact, Newsletter]
+  3. Twitter feed [X]
+  4. More statistic categories [X]
+  5. Add content below hero image [X]
   6. Additional links in Top Nav [X]
-  7. 'Back to Top' links [Wednesday]
-  8. League slogan on hero image [Tuesday]
+  7. 'Back to Top' links [Maybe]
+  8. League slogan on hero image [X]
   9. Link to teams from standings [X]
 
 Style:
@@ -33,15 +33,15 @@ General:
 
 Add:
   1. Different player names [X]
-  2. Images [Thursday]
-  3. Team specific content [Thursday]
-  4. Team contact information [Thursday]
-  5. Navigation links [Thursday]
+  2. Images [X]
+  3. Team specific content [Friday]
+  4. Team contact information [Friday]
+  5. Navigation links [Friday]
 
 Style:
   1. Style ticket order form [Friday]
   2. Make button to launch order form as a modal [Friday]
-  3. Team specific color palettes [Thursday]
+  3. Team specific color palettes [Friday]
   4. General CSS styling [ONGOING]
   5. Responsiveness [ONGOING]
 
